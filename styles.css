@@ -1,0 +1,231 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgb(2,2,102);
+    --bg-color:rgb(255, 255, 255);
+}
+
+
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    color: var(--bg-color);
+}
+
+header nav {
+    padding: 1rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header nav a {
+    margin-left: 0.6rem;
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    padding: 2rem;
+
+}
+
+#about .bio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 2rem;
+}
+
+#about .bio .bio-info {
+    flex: 1 1 22rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.img {
+    flex: 1 1 20rem;
+    text-align: center;
+}
+
+.img img {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+}
+
+.bio-info h2 {
+    font-size: 4rem;
+}
+
+.bio-info p {
+    font-size: 35px;
+    margin-top: 12px;
+}
+
+
+#project {
+    background-color: rgb(2, 2, 102);
+    padding: 38px;
+
+}
+
+#project .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+
+.container .card {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 1rem;
+    min-height: 24rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card ul {
+    padding: 1rem;
+}
+
+.card h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 50rem);
+    gap: 1rem;
+}
+
+form input,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    font: inherit;
+
+}
+
+textarea {
+    min-height: 14rem;
+    resize: vertical;
+}
+
+button {
+    padding: 1rem;
+    background-color: rgb(2, 2, 102);
+    border: none;
+    color: white;
+}
+
+footer {
+    background-color: rgb(2, 2, 102);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 900px) {
+    #project .container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav a {
+        margin-left: 0;
+    }
+
+    #about .bio {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #about {
+        padding: 1rem;
+    }
+
+    .bio-info h2 {
+        font-size: 2rem;
+    }
+
+    .bio-info p {
+        font-size: 1.3rem;
+    }
+
+    #project {
+        padding: 1rem;
+
+    }
+
+    #project .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container .card {
+        min-height: auto;
+    }
+
+    #contact {
+        padding: 1rem;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+}
