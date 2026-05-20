@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px;
+    padding: 1.rem;
     color: var(--bg-color);
 }
 
@@ -68,7 +68,7 @@ header nav a:hover {
 
 .img img {
     width: 100%;
-    max-width: 550px;
+    max-width: 50rem;
     height: auto;
 }
 
@@ -77,14 +77,14 @@ header nav a:hover {
 }
 
 .bio-info p {
-    font-size: 35px;
-    margin-top: 12px;
+    font-size: 3rem;
+    margin-top: 1rem;
 }
 
 
 #project {
     background-color: rgb(2, 2, 102);
-    padding: 38px;
+    padding: 2rem;
 
 }
 
@@ -97,7 +97,7 @@ header nav a:hover {
 
 .container .card {
     background-color: white;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 1rem;
     min-height: 24rem;
     overflow: hidden;
